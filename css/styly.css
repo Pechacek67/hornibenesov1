@@ -1,0 +1,127 @@
+/* ===== ZÁKLAD ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Segoe UI", Tahoma, sans-serif;
+    background-color: #f3f5f7;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* ===== HLAVIČKA ===== */
+.header {
+    background: linear-gradient(135deg, #2c5f2d, #7da453);
+    color: white;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.header h1 {
+    padding: 20px 0;
+    font-size: 2.5rem;
+}
+
+/* HERO OBRÁZEK */
+.hero-image {
+    width: 100%;
+    max-height: 450px;
+    object-fit: cover;
+    border-radius: 0 0 20px 20px;
+}
+
+/* NAVIGACE */
+.nav-menu {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+.nav-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: opacity 0.3s;
+}
+
+.nav-menu a:hover {
+    opacity: 0.7;
+}
+
+/* ===== OBSAH ===== */
+main {
+    padding: 40px 10%;
+}
+
+.section {
+    background-color: white;
+    padding: 40px;
+    margin-bottom: 40px;
+    border-radius: 15px;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.section h2 {
+    color: #2c5f2d;
+    margin-bottom: 20px;
+}
+
+/* INFO GRID */
+.info-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.info-box {
+    background-color: #f4f8f4;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+/* GALERIE */
+.gallery-preview {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.gallery-preview img {
+    width: 100%;
+    border-radius: 12px;
+    transition: transform 0.3s;
+}
+
+.gallery-preview img:hover {
+    transform: scale(1.05);
+}
+
+.note {
+    margin-top: 15px;
+    font-style: italic;
+}
+
+/* ===== PATIČKA ===== */
+.footer {
+    background-color: #2c5f2d;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+/* ===== RESPONZIVITA ===== */
+@media (max-width: 768px) {
+    .nav-menu {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    main {
+        padding: 30px 5%;
+    }
+}
